@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+
+    <title>Clique certo</title>
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <h1>Clique certo</h1>
+            <h2>Encontre o par ➡️</h2>
+        </div>
+        <div id="stage">
+            <img src="assets/astronauta.png" />
+        </div>
+    </header>
+    <main>
+    </main>
+</body>
+<script>
+    const imgs = [
+        "astronauta-terra.png",
+        "base-foguete.png",
+        "chocalho.png",
+        "enviar.png",
+        "foguete.png",
+        "pato.png",
+        "rugbi.png",
+        "skate.png",
+        "varinha-magica.png",
+        "astronauta.png",
+        "bola-de-praia.png",
+        "constelacao.png",
+        "espaco.png",
+        "lua.png",
+        "planetas.png",
+        "scooter-de-chute.png",
+        "telescopio.png",
+        "balde-de-areia.png",
+        "buraco-negro.png",
+        "controle-remoto.png",
+        "espada.png",
+        "nave-espacial.png",
+        "robo.png",
+        "sistema-solar.png",
+        "terra.png"
+    ];
+
+    const deck = [
+        { "icon_name": "astronauta-terra.png", "owned": false },
+        { "icon_name": "base-foguete.png", "owned": false },
+        { "icon_name": "chocalho.png", "owned": false },
+        { "icon_name": "enviar.png", "owned": false },
+        { "icon_name": "foguete.png", "owned": false },
+        { "icon_name": "pato.png", "owned": false },
+        { "icon_name": "rugbi.png", "owned": false },
+        { "icon_name": "skate.png", "owned": false },
+        { "icon_name": "varinha-magica.png", "owned": false },
+        { "icon_name": "astronauta.png", "owned": false },
+        { "icon_name": "bola-de-praia.png", "owned": false },
+        { "icon_name": "constelacao.png", "owned": false },
+        { "icon_name": "espaco.png", "owned": false },
+        { "icon_name": "lua.png", "owned": false },
+        { "icon_name": "planetas.png", "owned": false },
+        { "icon_name": "scooter-de-chute.png", "owned": false },
+        { "icon_name": "telescopio.png", "owned": false },
+        { "icon_name": "balde-de-areia.png", "owned": false },
+        { "icon_name": "buraco-negro.png", "owned": false },
+        { "icon_name": "controle-remoto.png", "owned": false },
+        { "icon_name": "espada.png", "owned": false },
+        { "icon_name": "nave-espacial.png", "owned": false },
+        { "icon_name": "robo.png", "owned": false },
+        { "icon_name": "sistema-solar.png", "owned": false },
+        { "icon_name": "terra.png", "owned": false }
+    ];
+
+
+    deck.forEach(card => {
+        const path = `assets/${card.icon_name}`
+        const cardDiv = document.createElement("div")
+        cardDiv.classList.add("card")
+        const cardImg = new Image()
+        cardImg.src = `assets/${card.icon_name}`
+        cardDiv.appendChild(cardImg)
+        document.querySelector("main").appendChild(cardDiv)
+    })
+</script>
+
+</html>

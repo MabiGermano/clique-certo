@@ -1,0 +1,51 @@
+h1 {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 84px;
+    margin: 0;
+}
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    color: #6c6c6c;
+    margin: 0;
+}
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div#title {
+    width: 70%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#stage, div.card {
+    width: 20%;
+    background-color: #ebebeb;
+    margin: 1rem;
+    padding: .5rem;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+}
+
+div#stage {
+    border: 1.5px solid #a9006e;
+    background-color: #dbadc8;
+}
+
+div#stage img,div.card img{
+    width: 100%;
+} 
